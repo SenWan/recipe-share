@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import GoogleLogin from "../components/Auth/GoogleLogin";
 
 const Register = () => {
@@ -27,6 +28,9 @@ const Register = () => {
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
+              </div>
+              <div>
+                <p className="text-center">Already have an acount? <Link to={'/login'} className="text-blue-400">Login</Link></p>
               </div>
             </form>
             {/* google login */}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import GoogleLogin from "../components/Auth/GoogleLogin";
 
 const Login = () => {
@@ -25,6 +26,11 @@ const Login = () => {
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
+
+        <div>
+            <p className="text-center">Dont have any acount? <Link to={'/register'} className="text-blue-400">Register</Link></p>
+          </div>
+
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
         </div>
