@@ -1,3 +1,5 @@
+import GoogleLogin from "../components/Auth/GoogleLogin";
+
 const Login = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -27,6 +29,11 @@ const Login = () => {
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
+      {/* google login */}
+      <div className="mx-7 mb-5">
+        <GoogleLogin></GoogleLogin>
+      </div>
+
     </div>
   </div>
 </div>
